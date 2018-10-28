@@ -1,0 +1,15 @@
+---
+
+- name: Java | Install OpenJDK Implementation
+  import_tasks: open-jdk.yml
+  when: not jre_prefer_oracle
+  tags:
+    - java
+    - openjdk
+
+- name: Java | Install OracleJDK Implementation using distributed binaries
+  import_tasks: oracle-jdk.yml
+  when: jre_prefer_oracle
+  tags:
+    - java
+    - oraclejdk

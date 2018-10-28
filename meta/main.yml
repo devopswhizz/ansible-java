@@ -1,0 +1,14 @@
+galaxy_info:
+  company: DevOps Talks
+  description: Java role, install java versions and set systems default
+  min_ansible_version: 2.6.3
+  license: Apache 2.0
+  platforms:
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+
+    - name: Ubuntu
+      versions:
+        - xenial
